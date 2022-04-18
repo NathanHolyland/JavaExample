@@ -1,2 +1,2 @@
 # JavaExample
-Inheritance and polymorphism examples for chas
+Inheritance and polymorphism examples for CHAS
