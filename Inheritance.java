@@ -1,3 +1,23 @@
+class Inheritance {
+    public static void main(String[] args) {
+        Child1 thing1 = new Child1();
+        Child2 thing2 = new Child2("thing2");
+
+        thing1.printInfo();
+        thing2.printInfo();
+
+        thing1.changeA(2);
+        int[] arr = {3, 2, 1, 4};
+        thing1.changeB(arr);
+        thing1.multiply(5);
+
+        thing2.changeName("thing2?");
+
+        thing1.printInfo();
+        thing2.printInfo();
+    }
+}
+
 class Parent {
     private int a = 0;
     private int[] b = {0};
@@ -59,24 +79,4 @@ class Child2 extends Parent {
         System.out.println("B = "+bStr+"\n");
     }
 
-}
-
-class Main {
-    public static void main(String[] args) {
-        Child1 thing1 = new Child1();
-        Child2 thing2 = new Child2("thing2");
-
-        thing1.printInfo();
-        thing2.printInfo();
-
-        thing1.changeA(2);
-        int[] arr = {3, 2, 1, 4};
-        thing1.changeB(arr);
-        thing1.multiply(5);
-
-        thing2.changeName("thing2?");
-
-        thing1.printInfo();
-        thing2.printInfo();
-    }
 }
